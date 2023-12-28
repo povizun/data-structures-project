@@ -11,7 +11,7 @@ class Node:
         self.next_node = next_node
 
 
-class Stack():
+class Stack:
     """Класс для стека"""
 
     def __init__(self):
