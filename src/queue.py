@@ -39,7 +39,12 @@ class Queue:
 
         :return: данные удаленного элемента
         """
-        pass
+        if self.head is not None:
+            old_head_data = self.head.data
+            self.head = self.head.next_node
+            return old_head_data
+        else:
+            return self.head
 
     def __str__(self):
         """Магический метод для строкового представления объекта"""
